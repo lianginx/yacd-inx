@@ -29,7 +29,7 @@ function Rule({ type, payload, proxy, id }: Props) {
     <div className={s0.rule}>
       <div className={s0.left}>{id}</div>
       <div>
-        <div className={s0.b}>{payload}</div>
+        <div className={s0.b}>{payload || type}</div>
         <div className={s0.a}>
           <div className={s0.type}>{type}</div>
           <div style={styleProxy}>{proxy}</div>
