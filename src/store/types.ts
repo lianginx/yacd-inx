@@ -43,6 +43,7 @@ export type ProxyItem = {
   history: LatencyHistory;
   all?: string[];
   now?: string;
+  hidden?: boolean;
 
   __provider?: string;
 };

@@ -46,7 +46,7 @@ export const NonProxyTypes = [
 
 export const getProxies = (s: State) => s.proxies.proxies;
 export const getDelay = (s: State) => s.proxies.delay;
-export const getProxyGroupNames = (s: State) => s.proxies.groupNames;
+export const getProxyGroupNames = (s: State) => s.proxies.groupNames.filter((name)=> !s.proxies.proxies[name].hidden);
 export const getProxyProviders = (s: State) => s.proxies.proxyProviders || [];
 export const getDangleProxyNames = (s: State) => s.proxies.dangleProxyNames;
 export const getShowModalClosePrevConns = (s: State) => s.proxies.showModalClosePrevConns;
