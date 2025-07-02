@@ -187,6 +187,9 @@ export default function Conn() {
         >
           <TabList>
             <Tab>
+              <span>{t('All')}</span>
+            </Tab>
+            <Tab>
               <span>{t('Active')}</span>
               <span className={s.connQty}>{connQty({ qty: filteredConns.length })}</span>
             </Tab>
@@ -213,6 +216,9 @@ export default function Conn() {
               overflow: 'auto',
             }}
           >
+            <TabPanel>
+              <>{renderTableOrPlaceholder([...filteredConns, ...filteredClosedConns])}</>
+            </TabPanel>
             <TabPanel>
               <>{renderTableOrPlaceholder(filteredConns)}</>
               <Fab

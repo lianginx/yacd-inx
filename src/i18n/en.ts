@@ -26,6 +26,7 @@ export const data = {
   order_name_desc: 'By name alphabetically (Z-A)',
   Connections: 'Connections',
   current_backend: 'Current Backend',
+  All: 'All',
   Active: 'Active',
   switch_backend: 'Switch backend',
   Closed: 'Closed',

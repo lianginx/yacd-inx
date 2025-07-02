@@ -26,6 +26,7 @@ export const data = {
   order_name_desc: '按名称字母排序 (Z-A)',
   Connections: '连接',
   current_backend: '当前后端',
+  All: '全部',
   Active: '活动',
   switch_backend: '切换后端',
   Closed: '已断开',
